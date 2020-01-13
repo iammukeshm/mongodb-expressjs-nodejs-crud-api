@@ -48,6 +48,15 @@ router.route('/employees')
             res.json({ message: 'Employee created!' });
         });
 
+    })
+    // get all the bears (accessed at GET http://localhost:8080/api/bears)
+    .get(function(req, res) {
+        Employee.find(function(err, employees) {
+            if (err)
+                res.send(err);
+
+            res.json(employees);
+        });
     });
 // more routes for our API will happen here
 
