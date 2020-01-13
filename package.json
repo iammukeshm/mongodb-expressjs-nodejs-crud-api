@@ -1,5 +1,5 @@
 {
-  "name": "node-express-crud-api",
+  "name": "mongodb-expressjs-nodejs-crud-api",
   "version": "1.0.0",
   "description": "a restful api built on express js connected to mongoDb to demonstrate crud operations",
   "main": "server.js",
